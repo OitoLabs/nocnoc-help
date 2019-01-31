@@ -1,0 +1,187 @@
+
+html {
+  scroll-behavior: smooth;
+}
+.static-pad {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: stretch;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 400;
+  margin: 2rem 0;
+  .side-bar {
+    width: 24.5%;
+    background-color: $white;
+    padding: 1.5rem;
+    margin-right: 1.5%;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      font-family: 'Kanit', sans-serif;
+      font-weight: 400;
+      li {
+        margin: 0;
+        width: 100%;
+        font-family: 'Kanit', sans-serif;
+        font-weight: 400;
+        a {
+          color: $grey;
+          text-decoration: none;
+          font-size: 1.538rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 1rem;
+          border-bottom: 0.1rem solid $border;
+          font-family: 'Kanit', sans-serif;
+          font-weight: 400;
+          &:hover {
+            background: $offwhite;
+          }
+          &.active {
+            background: $offwhite;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+  .static-content {
+    width: 74%;
+    padding: 1.5rem;
+    background: $white;
+    h4 {
+      font-weight: 500;
+      color: #666;
+    }
+    p {
+      font-size:  1.385rem;
+    }
+  }
+  #accordion {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    .card {
+      margin-bottom: 0rem;
+      border: 0;
+    }
+    .card-header {
+      padding: 1.5rem 1.5rem 1.5rem 0;
+      border-radius: 0;
+      background: none;
+      color: $grey;
+      border-bottom: 0;
+      cursor: pointer;
+      border-top: 0.1rem solid $border;
+      border-radius: 0;
+      &.collapsed {
+        background: none;
+      }
+      .btn {
+        text-transform: capitalize !important;
+        font-size: 1.692rem;
+        padding: 0;
+        color: $grey;
+        text-align: left;
+        line-height: 1;
+        i {
+          font-size: 1.538rem;
+        }
+      }
+      .fa-minus, .fa-plus {
+        font-size: 1.538rem;
+      }
+    }
+    .card-body {
+      padding: 0;
+      width: 80%;
+      p {
+        font-size: 1.385rem;
+      }
+    }
+  }
+}
+
+.custom-search-input{
+    padding: 0.3rem;
+    border: solid 1px $border;
+    border-radius: 0;
+    background-color: $white;
+    width: 50%;
+    input{
+        border: 0;
+        box-shadow: none;
+        font-size: 1.3rem;
+        &:focus {
+          outline: none;
+          border: 0;
+          box-shadow: none;
+        }
+    }
+    button{
+        margin: 0.2rem 0 0 0;
+        background: none;
+        box-shadow: none;
+        border: 0;
+        color: $light-gray;
+        background: $white;
+        padding: 0 8px 0 10px;
+        border-left: 0.1rem solid $border;
+        &:hover{
+            border: 0;
+            box-shadow: none;
+            border-left: 0.1rem solid $border;
+            background: $white;
+            color: $theme-tertiary;
+        }
+        &:active{
+            background-color: $white !important;
+            border-left: 0.1rem solid $border !important;
+            color: $theme-tertiary !important;
+        }
+        i {
+          font-size: 1.3rem;
+        }
+    }
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 7rem;
+  right: 2.5rem;
+  z-index: 99;
+  font-size: 3rem;
+  border: none;
+  outline: none;
+  color: #4d51bd;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 0;
+  background: none;
+  width: 3rem;
+  height: 3rem;
+  line-height: normal;
+}
+@media (max-width: 991px) {
+  html, body {
+      overflow-x: hidden;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .static-pad {
+    flex-direction: column;
+    .side-bar {
+      width: 100%;
+    }
+    .static-content {
+      width: 100%;
+    }
+  }
+  .card-header {
+    .btn {
+      white-space: pre-line;
+    }
+  }
+}

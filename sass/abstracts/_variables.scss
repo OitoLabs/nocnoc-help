@@ -1,0 +1,46 @@
+$theme-primary: #3639b4;
+/*Lign Shade*/
+$theme-primary-light: #4d51bd;
+$theme-primary-soft: #ebebf7;
+
+$theme-secondary: #f02748;
+/*Lign Shade*/
+$theme-secondary-light: #f0465c;
+
+$theme-tertiary: #f8531e;
+/*Lign Shade*/
+$theme-tertiary-light:#feede8;
+
+$theme-quaternary: #100e37;
+
+$base-color: #555;
+$base-color-dark: #212529;
+
+@mixin rotate($degrees) {
+    -webkit-transform: rotate($degrees);
+    -moz-transform: rotate($degrees);
+    -ms-transform: rotate($degrees);
+    -o-transform: rotate($degrees);
+    transform: rotate($degrees);
+}
+
+/*color*/
+$purple: #4f3fb3;
+$purple-light: #4d51bd;
+
+$white: #ffffff;
+$black: #000000;
+$offwhite: #f6f6f6;
+
+$grey: #303030;
+$soft-gray: #cccccc;
+$light-gray: #999;
+$light-grey2: #f3f1f4;
+$light-grey3: #ececec;
+$btn-grey: #e8e6ed;
+
+// $border: #ececec;
+$border: #e0dee1;
+$light-red: #fdf5e8;
+
+$success: #28a745;

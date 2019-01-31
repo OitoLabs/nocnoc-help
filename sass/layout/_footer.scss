@@ -1,0 +1,169 @@
+.footer{
+    background-color: #e8e6ed;
+    .foot-pad{
+        display: flex;
+        align-items:flex-start;
+        padding: 5rem 0;
+    }
+    ul{
+        margin: 0 1.5rem;
+        padding: 0;
+        flex-grow: 1;
+        &.social {
+          li {
+            display: block;
+            float: left;
+            margin: 0 1rem 0 0 ;
+            &:first-child {
+                width: 100%;
+            }
+          }
+        }
+        li{
+            list-style: none;
+            text-transform: capitalize;
+            font-size: 1.4rem;
+            margin-bottom: .5rem;
+            img {
+              width: 30rem;
+            }
+            a{
+                color: $theme-quaternary;
+                text-decoration: none;
+                &:hover{
+                    opacity: 0.5;
+                }
+                &.payment-logo {
+                  display: flex;
+                  background: url("../images/payment.svg") no-repeat left;
+                  background-size: contain;
+                  height: 4rem;
+                  margin: 0;
+                  width: 90%;
+                }
+                &.logistics-logo {
+                  display: flex;
+                  background: url("../images/logistics.svg") no-repeat left;
+                  background-size: contain;
+                  height: 4rem;
+                  margin: 0;
+                  width: 90%;
+                }
+            }
+            div {
+                display: inline;
+                width: 2rem;
+                display: inline-flex;
+                border: .1rem solid #999;
+                text-align: center;
+                padding: .2rem 0;
+                margin-right: .7rem;
+                &.social {
+                  border-radius: 50%;
+                  padding: 1rem 2rem;
+                  border: 0;
+                  background: $purple;
+                  padding: 1rem 2rem;
+                  margin: 0;
+                  display: flex;
+                  justify-content: center;
+                  color: $white;
+                  &:hover {
+                    i {
+                      color: $theme-secondary;
+                    }
+                  }
+                  i{
+                      padding: 0;
+                      margin: 0;
+                      font-size: 2rem;
+                  }
+                }
+                i{
+                    padding: 0;
+                    margin: 0 auto;
+                }
+            }
+            h3{
+                font-size: 1.6rem;
+                font-weight: 700;
+                text-transform: capitalize;
+                margin: 0 0 1rem 0;
+                color: $theme-quaternary;
+            }
+        }
+        &:first-child{
+            margin-left: 0;
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+        &:nth-child(3) {
+          flex-grow: 3;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .footer{
+        ul{
+            margin: 0;
+            margin-top: 2.5rem;
+            width: 50%;
+        }
+        .foot-pad{
+            flex-direction: row;
+            padding-top: 0;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    .footer{
+        ul{
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .footer{
+        ul{
+          li {
+            img {
+              width: 25rem;
+            }
+          }
+        }
+    }
+}
+
+.footer{
+    .rights{
+        background-color: $theme-quaternary;
+        color: #fff;
+        text-align: center;
+        font-size: 1.3rem;
+        padding: 1rem 0;
+    }
+    .copyright {
+      background-color: $theme-quaternary;
+      color: $white;
+      font-size: 1.3rem;
+      padding: 1rem 0;
+      display: flex;
+      justify-content: space-between;
+      .left {
+        width: 30%;
+        float: left;
+      }
+      .right {
+        width: 70%;
+        float: left;
+        text-align: right;
+      }
+    }
+}
