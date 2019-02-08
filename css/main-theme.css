@@ -296,9 +296,24 @@ html {
     width: 74%;
     padding: 1.5rem;
     background: #ffffff; }
+    .static-pad .static-content ul {
+      margin: 0;
+      padding: 0 0 0 2rem;
+      list-style-type: none; }
+      .static-pad .static-content ul li {
+        margin: 0 0 0.6rem 0; }
+        .static-pad .static-content ul li i {
+          margin: 0 1rem 0 0; }
+        .static-pad .static-content ul li ul {
+          list-style: circle;
+          margin: 1rem 0 0 0;
+          padding: 0 0 0 3rem; }
     .static-pad .static-content h4 {
       font-weight: 500;
-      color: #666; }
+      color: #000;
+      margin: 0 0 1rem 0; }
+    .static-pad .static-content h5 {
+      font-size: 1.4rem; }
     .static-pad .static-content p {
       font-size: 1.385rem; }
   .static-pad #accordion {
@@ -320,9 +335,9 @@ html {
         background: none; }
       .static-pad #accordion .card-header .btn {
         text-transform: capitalize !important;
-        font-size: 1.692rem;
+        font-size: 2rem;
         padding: 0;
-        color: #303030;
+        color: #3639b4;
         text-align: left;
         line-height: 1; }
         .static-pad #accordion .card-header .btn i {

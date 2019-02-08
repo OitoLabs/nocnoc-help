@@ -52,9 +52,29 @@ html {
     width: 74%;
     padding: 1.5rem;
     background: $white;
+    ul {
+      margin: 0;
+      padding: 0 0 0 2rem;
+      list-style-type: none;
+      li {
+        margin: 0 0 0.6rem 0;
+        i {
+          margin: 0 1rem 0 0;
+        }
+        ul {
+          list-style: circle;
+          margin: 1rem 0 0 0;
+          padding: 0 0 0 3rem;
+        }
+      }
+    }
     h4 {
       font-weight: 500;
-      color: #666;
+      color: #000;
+      margin: 0 0 1rem 0;
+    }
+    h5 {
+      font-size: 1.4rem;
     }
     p {
       font-size:  1.385rem;
@@ -81,9 +101,9 @@ html {
       }
       .btn {
         text-transform: capitalize !important;
-        font-size: 1.692rem;
+        font-size: 2rem;
         padding: 0;
-        color: $grey;
+        color: $theme-primary;
         text-align: left;
         line-height: 1;
         i {
