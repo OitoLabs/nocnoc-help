@@ -249,9 +249,6 @@ body {
   .right-panel {
     flex: 0 0 100%;
     margin: 0; } }
-html {
-  scroll-behavior: smooth; }
-
 .static-pad {
   display: flex;
   justify-content: space-between;
