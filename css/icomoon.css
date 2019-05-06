@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?qkqrn9');
+  src:  url('fonts/icomoon.eot?qkqrn9#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?qkqrn9') format('truetype'),
+    url('fonts/icomoon.woff?qkqrn9') format('woff'),
+    url('fonts/icomoon.svg?qkqrn9#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cart-new:before {
+  content: "\e91c";
+  color: #100e37;
+}
+.icon-profile-new:before {
+  content: "\e91d";
+  color: #fff;
+}
+.icon-wishlist-new:before {
+  content: "\e91e";
+  color: #100e37;
+}
+.icon-call:before {
+  content: "\e917";
+  color: #fff;
+}
+.icon-instagram:before {
+  content: "\e918";
+  color: #fff;
+}
+.icon-facebook:before {
+  content: "\e91a";
+  color: #fff;
+}
+.icon-line:before {
+  content: "\e91b";
+  color: #fff;
+}
+.icon-button-moredetail:before {
+  content: "\e916";
+}
+.icon-ruler:before {
+  content: "\e915";
+}
+.icon-profile:before {
+  content: "\e902";
+}
+.icon-cart:before {
+  content: "\e900";
+}
+.icon-wishlist2:before {
+  content: "\e919";
+}
+.icon-search:before {
+  content: "\e912";
+}
+.icon-cart1:before {
+  content: "\e914";
+}
+.icon-cart-add:before {
+  content: "\e901";
+}
+.icon-cart-done:before {
+  content: "\e903";
+}
+.icon-cart-filled:before {
+  content: "\e904";
+}
+.icon-contractmanagment:before {
+  content: "\e905";
+}
+.icon-deliver:before {
+  content: "\e906";
+}
+.icon-delivery:before {
+  content: "\e907";
+}
+.icon-DHL_logo .path1:before {
+  content: "\e908";
+  color: rgb(254, 204, 0);
+}
+.icon-DHL_logo .path2:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(213, 0, 41);
+}
+.icon-doneorder:before {
+  content: "\e90a";
+}
+.icon-downarrow:before {
+  content: "\e90b";
+}
+.icon-email:before {
+  content: "\e90c";
+}
+.icon-expand-arrow:before {
+  content: "\e90d";
+}
+.icon-help:before {
+  content: "\e90e";
+}
+.icon-help-center:before {
+  content: "\e90f";
+}
+.icon-nocnoc-logo:before {
+  content: "\e910";
+}
+.icon-pending:before {
+  content: "\e911";
+}
+.icon-wishlist-active:before {
+  content: "\e913";
+}

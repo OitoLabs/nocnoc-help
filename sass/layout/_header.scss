@@ -1,6 +1,6 @@
 /* Header Panel */
 .header-panel {
-    background-color: $theme-primary;
+    background-color: $white;
     .container{
         display: flex;
         justify-content: space-between;
@@ -9,7 +9,7 @@
     }
 }
 .logo{
-    flex-basis: 20rem;
+    flex-basis: 24.4rem;
     margin: 0.7rem 0;
 }
 .main-nav{
