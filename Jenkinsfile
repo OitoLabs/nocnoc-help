@@ -40,7 +40,7 @@ choice(choices: 'None\nQA\nPrepord\nProduction', description: 'Nocnoc enviorment
             	script{
 			  if("${params.NocNocEnv}" == "Production") {
            sh '''
-           aws s3 sync . s3://production-nocnoc-static-content/help --exclude ".git/*" --acl public-read
+           aws s3 sync . s3://production-nocnoc-static-content/help --exclude ".git/*" --exclude "Jenkinsfile" --acl public-read
            '''
 		}
                  }
