@@ -99,6 +99,8 @@
       cursor: pointer;
       border-top: 0.1rem solid $border;
       border-radius: 0;
+      text-decoration: none;
+      cursor: default;
       &.collapsed {
         background: none;
       }
@@ -109,6 +111,8 @@
         color: $theme-primary;
         text-align: left;
         line-height: 1;
+        text-decoration: none;
+        cursor: default;
         i {
           font-size: 1.538rem;
         }
